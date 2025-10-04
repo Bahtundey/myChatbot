@@ -28,7 +28,7 @@
         }
     
         .chat-header {
-          background: #4a90e2;
+          background: #3d2863;
           color: white;
           padding: 16px;
           text-align: center;
@@ -53,14 +53,14 @@
         }
     
         .user {
-          background: #4a90e2;
+          background: #6c21aa;
           color: white;
           margin-left: auto;
         }
     
         .bot {
-          background: #f0f0f0;
-          color: #333;
+          background: #9bbe40;
+          color: white;
           margin-right: auto;
         }
     
@@ -125,7 +125,7 @@
           padding: 0 16px;
           border: none;
           border-radius: 20px;
-          background: #4a90e2;
+          background: #5b0d70;
           color: white;
           font-size: 14px;
           cursor: pointer;
@@ -133,7 +133,7 @@
         }
     
         .chat-input button:hover {
-          background: #357ABD;
+          background: #541278;
         }
     
         @keyframes fadeIn {
@@ -160,15 +160,27 @@
           position: absolute;
           left: 0;
           top: 0;
-          color: #4a90e2; /* blue tone to match header */
+          color: #2a0738; /* blue tone to match header */
           font-size: 14px;
+        }
+
+        .maa{
+          background-image: url(images/laptop2.jpg);
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
         }
       </style>
 </head>
 
-<body>
+<body class="maa">
     <div class="chat-container">
-        <div class="chat-header">🤖 My AI Chatbot</div>
+        <div class="chat-header">
+          <h2>🤖 BiG Devv AI Chatbot 🤖</h2>
+          <p >Welcome to Big Devv AI Chatbot  – Revolutionize Your World with Intelligent Conversations!</p>
+        </div>
+        
+
         <div class="chat-box" id="chat-box"></div>
         <div class="chat-input">
           <input type="text" id="prompts" placeholder="Type a message..." onkeydown="if(event.key==='Enter') getGeminiResponse()">
